@@ -298,3 +298,4 @@ async def get_all_data():
         return JSONResponse(content=all_data)  # 返回 JSON 格式的响应
     except Exception as e:
         return JSONResponse(content={"error": str(e)}, status_code=500)
+    

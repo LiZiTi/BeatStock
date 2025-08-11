@@ -8,8 +8,8 @@
       <div class="controls">
         <!-- 音乐选择 -->
         <div class="control-item">
-          <label id="BeatStockLogo" ref="BeatStockLogo">
-            <i class="fas fa-music"></i>&nbsp;&nbsp;BeatStock
+          <label id="beatdataLogo" ref="beatdataLogo">
+            <i class="fas fa-music"></i>&nbsp;&nbsp;BeatData
           </label>
         </div>
         <!-- 音乐选择 -->
@@ -219,10 +219,10 @@ export default {
       }
     },
     beatLogo() {
-      const element = this.$refs.BeatStockLogo;
+      const element = this.$refs.beatdataLogo;
 
       if (!element) {
-        console.error("BeatStock logo element not found.");
+        console.error("BeatData logo element not found.");
         return;
       }
 
