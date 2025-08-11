@@ -1,0 +1,953 @@
+{
+  "macro_cnbs": {
+    "name": "中国宏观杠杆率",
+    "description": "中国国家金融与发展实验室-中国宏观杠杆率数据",
+    "xField": "年份",
+    "yFields": [
+      "中央政府",
+      "地方政府"
+    ],
+    "order": 1,
+    "logoName": "",
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM"
+  },
+  "macro_china_qyspjg": {
+    "name": "企业商品价格指数",
+    "description": "东方财富-经济数据一览-中国-企业商品价格指数, 数据区间从 20050101-至今",
+    "xField": "月份",
+    "yFields": [
+      "农产品-指数值",
+      "矿产品-指数值",
+      "煤油电-指数值",
+      "总指数-指数值"
+    ],
+    "order": 2,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_fdi": {
+    "name": "外商直接投资数据",
+    "description": "东方财富-经济数据一览-中国-外商直接投资数据, 数据区间从 200801-202012",
+    "xField": "月份",
+    "yFields": [
+      "当月"
+    ],
+    "order": 3,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_lpr": {
+    "name": "LPR品种数据",
+    "description": " 中国 LPR 品种数据, 数据区间从 19910421-至今",
+    "xField": "TRADE_DATE",
+    "yFields": [
+      "LPR1Y",
+      "LPR5Y"
+    ],
+    "order": 4,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_urban_unemployment": {
+    "name": "城镇调查失业率",
+    "description": "国家统计局-月度数据-城镇调查失业率",
+    "xField": "date",
+    "yFields": [
+      "value"
+    ],
+    "order": 5,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_shrzgm": {
+    "name": "社会融资规模增量统计",
+    "description": "商务数据中心-国内贸易-社会融资规模增量统计, 数据区间从 201501-至今",
+    "xField": "月份",
+    "yFields": [
+      "社会融资规模增量"
+    ],
+    "order": 6,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_gdp_yearly": {
+    "name": "中国 GDP 年率",
+    "description": " 中国 LPR 品种数据, 数据区间从 19910421-至今",
+    "xField": "日期",
+    "yFields": [
+      "今值",
+      "预测值",
+      "前值"
+    ],
+    "order": 7,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_cpi_yearly": {
+    "name": "中国 CPI 年率报告",
+    "description": "中国年度 CPI 数据, 数据区间从 19860201-至今",
+    "xField": "日期",
+    "yFields": [
+      "今值",
+      "预测值",
+      "前值"
+    ],
+    "order": 8,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_cpi_monthly": {
+    "name": "中国 CPI 月率报告",
+    "description": "中国月度 CPI 数据, 数据区间从 19960201-至今",
+    "xField": "日期",
+    "yFields": [
+      "今值",
+      "预测值",
+      "前值"
+    ],
+    "order": 9,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_ppi_yearly": {
+    "name": "中国 PPI 年率报告",
+    "description": " 中国 LPR 品种数据, 数据区间从 19910421-至今",
+    "xField": "日期",
+    "yFields": [
+      "今值",
+      "预测值",
+      "前值"
+    ],
+    "order": 10,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_exports_yoy": {
+    "name": "以美元计算出口年率",
+    "description": "中国以美元计算出口年率报告, 数据区间从 19820201-至今",
+    "xField": "日期",
+    "yFields": [
+      "今值",
+      "预测值",
+      "前值"
+    ],
+    "order": 11,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_imports_yoy": {
+    "name": "以美元计算进口年率",
+    "description": "中国以美元计算进口年率报告, 数据区间从 19960201-至今",
+    "xField": "日期",
+    "yFields": [
+      "今值",
+      "预测值",
+      "前值"
+    ],
+    "order": 12,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_trade_balance": {
+    "name": "以美元计算贸易帐",
+    "description": "中国以美元计算贸易帐报告, 数据区间从19810201-至今",
+    "xField": "日期",
+    "yFields": [
+      "今值",
+      "预测值",
+      "前值"
+    ],
+    "order": 13,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_gyzjz": {
+    "name": "工业增加值增长",
+    "description": "东方财富-中国工业增加值增长, 数据区间从 2008 - 至今",
+    "xField": "发布时间",
+    "yFields": [
+      "同比增长",
+      "累计增长"
+    ],
+    "order": 14,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_industrial_production_yoy": {
+    "name": "规模以上工业增加值年率",
+    "description": "中国规模以上工业增加值年率报告, 数据区间从 19900301-至今",
+    "xField": "日期",
+    "yFields": [
+      "今值",
+      "预测值",
+      "前值"
+    ],
+    "order": 15,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_pmi_yearly": {
+    "name": "官方制造业 PMI",
+    "description": "中国年度PMI数据, 数据区间从 20050201-至今",
+    "xField": "日期",
+    "yFields": [
+      "今值",
+      "预测值",
+      "前值"
+    ],
+    "order": 16,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_cx_pmi_yearly": {
+    "name": "财新制造业PMI终值",
+    "description": "中国年度财新 PMI 数据, 数据区间从 20120120-至今",
+    "xField": "日期",
+    "yFields": [
+      "今值",
+      "预测值",
+      "前值"
+    ],
+    "order": 17,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_cx_services_pmi_yearly": {
+    "name": "财新服务业PMI",
+    "description": "中国财新服务业 PMI 报告, 数据区间从 20120405-至今",
+    "xField": "日期",
+    "yFields": [
+      "今值",
+      "预测值",
+      "前值"
+    ],
+    "order": 18,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_non_man_pmi": {
+    "name": "中国官方非制造业PMI",
+    "description": "中国官方非制造业 PMI, 数据区间从 20160101-至今",
+    "xField": "日期",
+    "yFields": [
+      "今值",
+      "预测值",
+      "前值"
+    ],
+    "order": 19,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_fx_reserves_yearly": {
+    "name": "外汇储备",
+    "description": "中国年度外汇储备数据, 数据区间从 20140115-至今",
+    "xField": "日期",
+    "yFields": [
+      "今值",
+      "预测值",
+      "前值"
+    ],
+    "order": 20,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_m2_yearly": {
+    "name": "M2货币供应年率",
+    "description": "中国年度 M2 数据, 数据区间从 19980201-至今",
+    "xField": "日期",
+    "yFields": [
+      "今值",
+      "预测值",
+      "前值"
+    ],
+    "order": 21,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_national_tax_receipts": {
+    "name": "全国税收收入",
+    "description": "中国新房价指数月度数据, 数据区间从 201101-至今",
+    "xField": "季度",
+    "yFields": [
+      "税收收入合计"
+    ],
+    "order": 22,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_bank_financing": {
+    "name": "银行理财产品发行数量",
+    "description": "银行理财产品发行数量, 数据区间从 2000 一月-至今",
+    "xField": "日期",
+    "yFields": [
+      "最新值"
+    ],
+    "order": 23,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_insurance_income": {
+    "name": "原保险保费收入",
+    "description": "原保险保费收入, 数据区间从 200407-至今",
+    "xField": "日期",
+    "yFields": [
+      "最新值"
+    ],
+    "order": 24,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_mobile_number": {
+    "name": "手机出货量",
+    "description": "手机出货量, 数据区间从 201201-至今",
+    "xField": "日期",
+    "yFields": [
+      "最新值"
+    ],
+    "order": 25,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_vegetable_basket": {
+    "name": "菜篮子产品批发价格指数",
+    "description": "菜篮子产品批发价格指数, 数据区间从 20050927-至今",
+    "xField": "日期",
+    "yFields": [
+      "最新值"
+    ],
+    "order": 26,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_agricultural_product": {
+    "name": "农产品批发价格总指数",
+    "description": "农产品批发价格总指数, 数据区间从 20050927-至今",
+    "xField": "日期",
+    "yFields": [
+      "最新值"
+    ],
+    "order": 27,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_agricultural_index": {
+    "name": "农副指数",
+    "description": "农副指数数据, 数据区间从 20111205-至今",
+    "xField": "日期",
+    "yFields": [
+      "最新值"
+    ],
+    "order": 28,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_energy_index": {
+    "name": "能源指数",
+    "description": "能源指数数据, 数据区间从 20111205-至今",
+    "xField": "日期",
+    "yFields": [
+      "最新值"
+    ],
+    "order": 29,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_commodity_price_index": {
+    "name": "大宗商品价格",
+    "description": "大宗商品价格数据, 数据区间从 20111205-至今",
+    "xField": "日期",
+    "yFields": [
+      "最新值"
+    ],
+    "order": 30,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_global_sox_index": {
+    "name": "费城半导体指数",
+    "description": "费城半导体指数数据, 数据区间从 19940504-至今",
+    "xField": "日期",
+    "yFields": [
+      "最新值"
+    ],
+    "order": 31,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_yw_electronic_index": {
+    "name": "小商品指数-电子元器件",
+    "description": "义乌小商品指数-电子元器件数据, 数据区间从 20060911-至今",
+    "xField": "日期",
+    "yFields": [
+      "最新值"
+    ],
+    "order": 32,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_construction_index": {
+    "name": "建材指数",
+    "description": "建材指数数据, 数据区间从 20111205-至今",
+    "xField": "日期",
+    "yFields": [
+      "最新值"
+    ],
+    "order": 33,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_construction_price_index": {
+    "name": "建材价格指数",
+    "description": "建材价格指数数据, 数据区间从 20100615-至今",
+    "xField": "日期",
+    "yFields": [
+      "最新值"
+    ],
+    "order": 34,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_lpi_index": {
+    "name": "物流景气指数",
+    "description": "物流景气指数数据, 数据区间从 20130701-至今",
+    "xField": "日期",
+    "yFields": [
+      "最新值"
+    ],
+    "order": 35,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_bdti_index": {
+    "name": "原油运输指数",
+    "description": "原油运输指数数据, 数据区间从 20011227-至今",
+    "xField": "日期",
+    "yFields": [
+      "最新值"
+    ],
+    "order": 36,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_bsi_index": {
+    "name": "超灵便型船运价指数",
+    "description": "超灵便型船运价指数数据, 数据区间从 20060103-至今",
+    "xField": "日期",
+    "yFields": [
+      "最新值"
+    ],
+    "order": 37,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_shipping_bci": {
+    "name": "海岬型运费指数",
+    "description": "海岬型运费指数, 数据区间从 19990430-至今",
+    "xField": "日期",
+    "yFields": [
+      "最新值"
+    ],
+    "order": 38,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_shipping_bcti": {
+    "name": "成品油运输指数",
+    "description": "成品油运输指数, 数据区间从 20011217-至今  ",
+    "xField": "日期",
+    "yFields": [
+      "最新值"
+    ],
+    "order": 39,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_new_financial_credit": {
+    "name": "新增信贷数据",
+    "description": "中国新增信贷数据数据, 数据区间从 200801 至今, 月度数据",
+    "xField": "月份",
+    "yFields": [
+      "当月"
+    ],
+    "order": 40,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_cpi": {
+    "name": "居民消费价格指数",
+    "description": "中国居民消费价格指数, 数据区间从 200801 至今, 月度数据",
+    "xField": "月份",
+    "yFields": [
+      "全国-当月",
+      "城市-当月",
+      "农村-当月"
+    ],
+    "order": 41,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_gdp": {
+    "name": "国内生产总值",
+    "description": "中国国内生产总值, 数据区间从 200601 至今, 月度数据",
+    "xField": "季度",
+    "yFields": [
+      "国内生产总值-绝对值",
+      "第一产业-绝对值",
+      "第二产业-绝对值",
+      "第三产业-绝对值"
+    ],
+    "order": 42,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_ppi": {
+    "name": "工业品出厂价格指数",
+    "description": "工业品出厂价格指数, 数据区间从 200601 至今, 月度数据",
+    "xField": "月份",
+    "yFields": [
+      "当月"
+    ],
+    "order": 43,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_gdzctz": {
+    "name": "中国城镇固定资产投资",
+    "description": "中国城镇固定资产投资, 数据区间从 200802 至今, 月度数据",
+    "xField": "月份",
+    "yFields": [
+      "当月"
+    ],
+    "order": 44,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_hgjck": {
+    "name": "海关进出口增减情况",
+    "description": "中国海关进出口增减情况一览表, 数据区间从 200801 至今, 月度数据",
+    "xField": "月份",
+    "yFields": [
+      "当月出口额-金额",
+      "当月进口额-金额"
+    ],
+    "order": 45,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_czsr": {
+    "name": "财政收入",
+    "description": "中国财政收入, 数据区间从 200801 至今, 月度数据",
+    "xField": "月份",
+    "yFields": [
+      "当月"
+    ],
+    "order": 46,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_whxd": {
+    "name": "外汇贷款数据",
+    "description": "外汇贷款数据, 数据区间从 200802 至今, 月度数据",
+    "xField": "月份",
+    "yFields": [
+      "当月"
+    ],
+    "order": 47,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_wbck": {
+    "name": "本外币存款",
+    "description": "本外币存款, 数据区间从 200802 至今, 月度数据",
+    "xField": "月份",
+    "yFields": [
+      "当月"
+    ],
+    "order": 48,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_xfzxx": {
+    "name": "消费者信心指数",
+    "description": "东方财富网-消费者信心指数",
+    "xField": "月份",
+    "yFields": [
+      "消费者信心指数-指数值",
+      "消费者满意指数-指数值",
+      "消费者预期指数-指数值"
+    ],
+    "order": 49,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_reserve_requirement_ratio": {
+    "name": "存款准备金率",
+    "description": "国家统计局-存款准备金率",
+    "xField": "公布时间",
+    "yFields": [
+      "大型金融机构-调整前",
+      "大型金融机构-调整后",
+      "中小金融机构-调整前",
+      "中小金融机构-调整后"
+    ],
+    "order": 50,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_china_consumer_goods_retail": {
+    "name": "社会消费品零售总额",
+    "description": "东方财富-经济数据-社会消费品零售总额",
+    "xField": "月份",
+    "yFields": [
+      "当月"
+    ],
+    "order": 51,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_society_electricity": {
+    "name": "全社会用电分类情况表",
+    "description": "国家统计局-全社会用电分类情况表",
+    "xField": "统计时间",
+    "yFields": [
+      "全社会用电量",
+      "第一产业用电量",
+      "第二产业用电量",
+      "第三产业用电量",
+      "城乡居民生活用电量合计",
+      "城镇居民用电量",
+      "乡村居民用电量"
+    ],
+    "order": 52,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_society_traffic_volume": {
+    "name": "全社会客货运输量",
+    "description": "国家统计局-全社会客货运输量-非累计",
+    "xField": "统计时间",
+    "yFields": [
+      "客运量",
+      "货运量"
+    ],
+    "order": 53,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_central_bank_balance": {
+    "name": "央行货币当局资产负债",
+    "description": " 新浪财经-中国宏观经济数据-央行货币当局资产负债",
+    "xField": "统计时间",
+    "yFields": [
+      "总资产",
+      "总负债"
+    ],
+    "order": 55,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_insurance": {
+    "name": "保险业经营情况",
+    "description": "新浪财经-中国宏观经济数据-保险业经营情况",
+    "xField": "统计时间",
+    "yFields": [
+      "原保险保费收入",
+      "财产险保费收入",
+      "人身险保费收入",
+      "原保险赔付支出",
+      "财产险保费赔付支出",
+      "人身险保费赔付支出"
+    ],
+    "order": 56,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_supply_of_money": {
+    "name": "货币供应量",
+    "description": "新浪财经-中国宏观经济数据-货币供应量",
+    "xField": "统计时间",
+    "yFields": [
+      "货币和准货币（广义货币M2）",
+      "流通中现金(M0)"
+    ],
+    "order": 57,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_foreign_exchange_gold": {
+    "name": "央行黄金和外汇储备",
+    "description": " 国家统计局-央行黄金和外汇储备, 比东财接口数据时间长",
+    "xField": "统计时间",
+    "yFields": [
+      "黄金储备",
+      "国家外汇储备"
+    ],
+    "order": 58,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_retail_price_index": {
+    "name": "商品零售价格指数",
+    "description": "国家统计局-商品零售价格指数",
+    "xField": "统计月份",
+    "yFields": [
+      "零售商品价格指数"
+    ],
+    "order": 59,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_fx_gold": {
+    "name": "外汇和黄金储备",
+    "description": "中国外汇和黄金储备, 数据区间从 200801 至今, 月度数据",
+    "xField": "月份",
+    "yFields": [
+      "黄金储备-数值",
+      "国家外汇储备-数值"
+    ],
+    "order": 60,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_china_stock_market_cap": {
+    "name": "全国股票交易统计表",
+    "description": "全国股票交易统计表, 数据区间从 200801 至今, 月度数据",
+    "xField": "数据日期",
+    "yFields": [
+      "市价总值-上海",
+      "市价总值-深圳",
+      "成交金额-上海",
+      "成交金额-深圳",
+      "成交量-上海",
+      "成交量-深圳"
+    ],
+    "order": 61,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_rmb_loan": {
+    "name": "新增人民币贷款",
+    "description": "同花顺-数据中心-宏观数据-新增人民币贷款",
+    "xField": "月份",
+    "yFields": [
+      "新增人民币贷款-总额",
+      "总负债"
+    ],
+    "order": 62,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_rmb_deposit": {
+    "name": "人民币存款余额",
+    "description": "同花顺-数据中心-宏观数据-人民币存款余额",
+    "xField": "月份",
+    "yFields": [
+      "新增存款-数量",
+      "新增企业存款-数量",
+      "新增储蓄存款-数量",
+      "新增其他存款-数量"
+    ],
+    "order": 63,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM",
+    "logoName": ""
+  },
+  "macro_bank_usa_interest_rate": {
+    "name": "美联储利率决议报告",
+    "description": "美联储利率决议报告, 数据区间从 19820927-至今",
+    "xField": "日期",
+    "yFields": [
+      "今值",
+      "预测值",
+      "前值"
+    ],
+    "order": 63,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_bank_euro_interest_rate": {
+    "name": "欧洲央行决议报告",
+    "description": "欧洲央行决议报告, 数据区间从 19990101-至今",
+    "xField": "日期",
+    "yFields": [
+      "今值",
+      "预测值",
+      "前值"
+    ],
+    "order": 63,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_bank_japan_interest_rate": {
+    "name": "日本利率决议报告",
+    "description": "日本利率决议报告, 数据区间从 20080214-至今",
+    "xField": "日期",
+    "yFields": [
+      "今值",
+      "预测值",
+      "前值"
+    ],
+    "order": 63,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_bank_russia_interest_rate": {
+    "name": "俄罗斯利率决议报告",
+    "description": "俄罗斯利率决议报告, 数据区间从 20030601-至今",
+    "xField": "日期",
+    "yFields": [
+      "今值",
+      "预测值",
+      "前值"
+    ],
+    "order": 63,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  },
+  "macro_bank_india_interest_rate": {
+    "name": "印度利率决议报告",
+    "description": "印度利率决议报告, 数据区间从 20000801-至今",
+    "xField": "日期",
+    "yFields": [
+      "今值",
+      "预测值",
+      "前值"
+    ],
+    "order": 63,
+    "enable": 1,
+    "category": "",
+    "timeFormat": "YYYY-MM-DD",
+    "logoName": ""
+  }
+}

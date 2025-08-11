@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>启动中...</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+        }
+
+        .glowing-text {
+            font-size: 28px;
+            font-weight: bold;
+            color: #f40384;
+            text-align: center;
+            padding: 0 20px;
+            text-shadow: 0 0 5px rgba(255, 234, 9, 0.742),
+                0 0 10px rgba(143, 234, 7, 0.896),
+                0 0 20px rgba(100, 235, 4, 0.902),
+                0 0 40px rgba(6, 179, 232, 0.87);
+            animation: glow 1.5s ease-in-out infinite alternate, breath 2s ease-in-out infinite;
+        }
+
+        .fade-out {
+            animation: fadeOut 1s forwards;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px rgba(255, 234, 9, 0.742),
+                0 0 10px rgba(143, 234, 7, 0.896),
+                0 0 20px rgba(100, 235, 4, 0.902),
+                0 0 40px rgba(6, 179, 232, 0.87);
+            }
+
+            to {
+                text-shadow: 0 0 5px rgba(103, 255, 9, 0.742),
+                0 0 10px rgba(7, 162, 234, 0.896),
+                0 0 20px rgba(235, 162, 4, 0.902),
+                0 0 40px rgba(232, 6, 213, 0.87);
+            }
+        }
+
+        @keyframes breath {
+            0% {
+                transform: scale(.8);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(.8);
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="glowing-text" id="quote">加载中...</div>
+    <div id="status" style="font-size: 16px; margin-top: 20px; text-align: center;">正在启动服务...</div>
+
+    <script>
+        const quotes = [
+            "如果你不愿意拥有一只股票十年，那就不要考虑拥有它十分钟。 – 沃伦·巴菲特",
+            "股市短期来看是投票机，但长期来看是称重机。 – 本杰明·格雷厄姆",
+            "不要把所有的鸡蛋放在一个篮子里。 – 安德鲁·卡内基",
+            "投资的成功不是看短期波动，而是看长期的收益。 – 约翰·博格尔",
+            "买股票就是买公司的一部分，不要因为股票价格波动而吓得失去理智。 – 彼得·林奇",
+            "风险来自你不知道自己在做什么。 – 沃伦·巴菲特",
+            "我宁愿以合理的价格买入伟大的公司，而不是以便宜的价格买入普通的公司。 – 沃伦·巴菲特",
+            "唯一能确定的就是市场总是充满不确定性。 – 彼得·林奇",
+            "时间是朋友，冲动是敌人。 – 查尔斯·艾里斯",
+            "成功的投资是看清价值，耐心等待回报。 – 霍华德·马克斯",
+            "投资并不是关于回避风险，而是管理风险。 – 本杰明·格雷厄姆",
+            "你永远无法预测股市的涨跌，但你可以管理你自己。 – 彼得·林奇",
+            "最好的投资就是投资自己。 – 沃伦·巴菲特",
+            "复利是世界第八大奇迹。 – 爱因斯坦",
+            "在股市中，坚持耐心是最强的武器。 – 彼得·林奇",
+            "一个成功的投资者是个耐心的投资者。 – 查尔斯·艾里斯",
+            "短期波动不影响长期回报。 – 杰克·伯格尔",
+            "历史表明，市场下跌是不可避免的。 – 本杰明·格雷厄姆",
+            "越是简单的投资策略，越是有效。 – 约翰·博格尔",
+            "你无法在所有事情上都正确，但必须在关键时刻做出正确的决定。 – 沃伦·巴菲特",
+            "长期投资是唯一的安全之道。 – 彼得·林奇",
+            "经济总是在波动，但人类的创新能力会不断前进。 – 沃伦·巴菲特",
+            "市场的不确定性是投资的本质。 – 霍华德·马克斯",
+            "在别人贪婪时恐惧，在别人恐惧时贪婪。 – 沃伦·巴菲特",
+            "伟大的投资并不需要做出很多正确决定。 – 查理·芒格",
+            "投资不是智力游戏，而是情绪管理的游戏。 – 约翰·邓普顿",
+            "股票的价格是投票决定的，公司的价值是称重决定的。 – 本杰明·格雷厄姆",
+            "股市短期是噪音，长期是信号。 – 杰克·伯格尔",
+            "用分散投资来降低风险，而不是通过频繁交易。 – 查尔斯·艾里斯",
+            "投资是一场马拉松，而不是一场短跑。 – 彼得·林奇",
+            "市场情绪无法预测，但你可以控制你的情绪。 – 霍华德·马克斯",
+            "你的投资组合应该像看门狗一样保持警觉。 – 沃伦·巴菲特",
+            "价格是你付出的，价值是你得到的。 – 沃伦·巴菲特",
+            "成功的投资是做好研究并保持冷静。 – 本杰明·格雷厄姆",
+            "一个投资者的最终成功取决于他在波动时的冷静。 – 约翰·博格尔"
+        ];
+
+        // 随机选择一句名言并显示
+        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        document.getElementById('quote').innerText = randomQuote;
+
+        // 定义一个触发淡出效果的函数
+        function triggerFadeOut() {
+            document.body.classList.add('fade-out');
+        }
+        
+        // 模拟加载状态更新
+        let statusMessages = ["正在启动服务...", "加载配置文件...", "连接数据源...", "Almost ready!"];
+        let statusIndex = 0;
+        
+        const statusElement = document.getElementById('status');
+        const statusInterval = setInterval(() => {
+            statusElement.innerText = statusMessages[statusIndex];
+            statusIndex = (statusIndex + 1) % statusMessages.length;
+        }, 3000);
+        
+        // 15秒后自动跳转（防止永久卡住）
+        setTimeout(() => {
+            clearInterval(statusInterval);
+            // 触发页面跳转的逻辑应该由主进程控制
+            // 这里只是模拟
+        }, 15000);
+    </script>
+</body>
+
+</html>
